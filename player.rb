@@ -1,7 +1,6 @@
 class Player
 
-  attr_reader :lives
-  attr_writer :lives
+  attr_accessor :lives
 
   def initialize(number)
     @number = number
@@ -9,7 +8,7 @@ class Player
   end
 
   def minus
-    self.lives--
+    self.lives -= 1
   end
 
 end

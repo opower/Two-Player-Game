@@ -3,9 +3,11 @@ require './question.rb'
 
 class Game
 
+  attr_accessor :player1, :player2
+
   def initialize
-    player1 = Player.new(1)
-    player2 = Player.new(2)
+    @player1 = Player.new(1)
+    @player2 = Player.new(2)
   end
 
   def check_lives(player)
@@ -15,13 +17,10 @@ class Game
     false
   end
 
-  def turn(player)
+  def ask
     question = Question.new
-    puts question
+    puts question.game_question
+    puts question.answer
   end
 
 end
-
-game1 = Game.new
-
-game1.turn

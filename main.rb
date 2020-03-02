@@ -1,3 +1,4 @@
+require './game.rb'
 
 class Main
 
