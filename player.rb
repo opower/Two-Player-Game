@@ -1,6 +1,6 @@
 class Player
 
-  attr_accessor :lives
+  attr_accessor :lives, :number
 
   def initialize(number)
     @number = number
@@ -9,6 +9,10 @@ class Player
 
   def minus
     self.lives -= 1
+  end
+
+  def to_s
+    number
   end
 
 end

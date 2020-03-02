@@ -2,11 +2,8 @@ require './game.rb'
 
 class Main
 
-  def initialize
-    game = Game.new
-  end
-
-
-
-
+  game = Game.new
+  game.play
+  
 end
+
